@@ -11,8 +11,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository_url>
-   cd <repository_name>
+   git clone <https://github.com/junreytejas/library>
+   cd <library>
    ```
 
 2. **Install dependencies:**
