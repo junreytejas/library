@@ -50,8 +50,8 @@ To run this project locally, follow these steps:
 
 - **URL:** `/api/books`
 - **Method:** `POST`
-- **Description:** Adds a new book to the collection.
-- **Request Body:** JSON object following the `Book` schema.
+- **Description:** Adds a new book to the collection. Can accept single Book object or an Array of Book objects.
+- **Request Body:** JSON object following the `Book` schema or `Array` of `Book` objects.
 - **Responses:**
   - `201 Created`: Returns the newly added book.
   - `400 Bad Request`: If request body is invalid or missing required fields.
