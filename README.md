@@ -139,7 +139,35 @@ Content-Type: application/json
 }
 ```
 
-### Example: Fetching a New Book
+### Example: Fetching Books
+
+**Request:**
+
+```http
+GET /api/books
+Content-Type: application/json
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "title": "Example Book",
+  "author": "John Doe",
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book."
+},
+{
+  "id": 1,
+  "title": "Example Book 2",
+  "author": "John Doe 2", 
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book 2."
+}
+```
+
+### Example: Fetching a Book
 
 **Request:**
 
