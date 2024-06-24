@@ -138,3 +138,133 @@ Content-Type: application/json
   "summary": "This is an example book."
 }
 ```
+
+### Example: Fetching a New Book
+
+**Request:**
+
+```http
+GET /api/books/1
+Content-Type: application/json
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "title": "Example Book",
+  "author": "John Doe",
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book."
+}
+```
+
+### Example: Partially updating a New Book
+
+**Request:**
+
+```http
+PATCH /api/books/1
+Content-Type: application/json
+
+{
+  "author": "John Doe The Great"
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "title": "Example Book",
+  "author": "John Doe The Great",
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book."
+}
+```
+
+### Example: Full updating a New Book
+
+**Request:**
+
+```http
+PUT /api/books/1
+Content-Type: application/json
+
+{
+  "title": "Example Book 2",
+  "author": "John Doe The Greatest",
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book 2."
+}
+```
+
+**Response:**
+
+```json
+{
+  "id": 1,
+  "title": "Example Book 2",
+  "author": "John Doe The Greatest",
+  "publishedDate": "2023-01-01",
+  "summary": "This is an example book 2."
+}
+```
+
+### Example: Deleting a New Book
+
+**Request:**
+
+```http
+DELETE /api/books/1
+Content-Type: application/json
+```
+
+**Response:**
+
+```json
+{
+    "status": "success",
+    "message": "Book 1 deleted successfully"
+}
+```
+
+## Example Error Responses
+
+```json
+{
+    "message": "Resource Not Found"
+}
+```
+```json
+{
+    "message": "Missing Book Author"
+}
+```
+```json
+{
+    "message": "Missing Book Title"
+}
+```
+```json
+{
+    "message": "Missing Book Published Date"
+}
+```
+```json
+{
+    "message": "Missing Book Summary"
+}
+```
+```json
+{
+    "message": "Invalid book ID"
+}
+```
+```json
+{
+    "message": "Internal Server Error Occured"
+}
+```
