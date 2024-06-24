@@ -32,6 +32,8 @@ To run this project locally, follow these steps:
 4. **Access the API:**
 
    The API endpoints will be available on `http://localhost:3000/api/books` for managing books and `http://localhost:3000/api/books/{id}` for individual book operations.
+   
+   Best use `Postman` for clear and easy way of interacting with the API endpoints.
 
 ## API Endpoint Documentation
 
