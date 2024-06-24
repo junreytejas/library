@@ -159,7 +159,7 @@ Content-Type: application/json
   "summary": "This is an example book."
 },
 {
-  "id": 1,
+  "id": 2,
   "title": "Example Book 2",
   "author": "John Doe 2", 
   "publishedDate": "2023-01-01",
